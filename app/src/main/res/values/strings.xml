@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Student Management</string>
+    <string name="add_student">Add Student</string>
+    <string name="student_image">student_image</string>
+    <string name="delete_button">delete_button</string>
+    <string name="profile_image">profile_image</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_class">Enter Class</string>
+    <string name="enter_roll_number">Enter Roll Number</string>
+    <string name="no_students_found">No students found</string>
+</resources>

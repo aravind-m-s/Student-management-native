@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_edit"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        app:title=" "
+        app:titleTextColor="@color/white"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Back Button"
+            />
+        <TextView
+            android:id="@+id/title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add Student"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:gravity="center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ImageView
+        android:id="@+id/imageview_add_edit_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar_add_edit"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_imageview"
+        android:contentDescription="@string/profile_image" />
+
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="24dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageview_add_edit_image"
+        android:layout_margin="16dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/enter_name"
+        android:textColorHint="@color/grey"
+        android:autofillHints="true"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/editText_class"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="24dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText_name"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/enter_class"
+        android:textColorHint="@color/grey"
+        android:autofillHints="true"
+        android:inputType="number"
+        />
+
+        <EditText
+            android:id="@+id/editText_rollNo"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="24dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editText_class"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/enter_roll_number"
+            android:textColorHint="@color/grey"
+            android:autofillHints="true"
+            android:inputType="number"
+            />
+
+    <Button
+        android:id="@+id/button_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add_student"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/primaryColor"
+        />
+
+    
+</RelativeLayout>
